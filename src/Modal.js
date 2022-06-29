@@ -5,15 +5,16 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 
 export default function Modal({ open, onClose }) {
+  const useSolution = false;
   return (
     <Dialog
       open={open}
       onClose={onClose}
       fullWidth
       maxWidth="sm"
-      // disableAutoFocus
-      // disableEnforceFocus
-      disableRestoreFocus
+      disableAutoFocus
+      disableEnforceFocus
+      disableRestoreFocus={useSolution}
     >
       <DialogContent dividers>
         <TextField
